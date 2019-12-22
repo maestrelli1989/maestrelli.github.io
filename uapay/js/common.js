@@ -70,6 +70,30 @@ $(() => {
 		$(developersSubMenu).slideToggle(500);
 	});
 
+	$(window).click(({target}) => {
+		if($(target).is(":not(#business-sub-menu, #business-sub-menu *, #business-trigger)")) {
+			$(businessSubMenu).slideUp(500);
+		}
+	});
+
+	$(window).click(({target}) => {
+		if($(target).is(":not(#user-sub-menu, #user-sub-menu *, #user-trigger)")) {
+			$(userSubMenu).slideUp(500);
+		}
+	});
+
+	$(window).click(({target}) => {
+		if($(target).is(":not(#company-sub-menu, #company-sub-menu *, #company-trigger)")) {
+			$(companySubMenu).slideUp(500);
+		}
+	});
+
+	$(window).click(({target}) => {
+		if($(target).is(":not(#developers-sub-menu, #developers-sub-menu *, #developers-trigger)")) {
+			$(developersSubMenu).slideUp(500);
+		}
+	});
+
 	/*
 		Smooth scroll effect at the "Industry solutions" page
 	*/
