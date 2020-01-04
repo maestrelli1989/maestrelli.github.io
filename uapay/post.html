@@ -27,20 +27,20 @@
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/animate.css">
 		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
 		<header class="header red-header">
-			<div class="container">
-				<div class="header-flex">
+			<div class="container animatedParent animateOnce" data-sequence="500">
+				<div class="header-flex animated fadeInDown" data-id="1">
 					<div class="header-flex-left"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"/></a>
 						<div class="menu">
 							<div class="menu-item">
 								<div class="menu-trigger" id="business-trigger">Бізнесу</div>
 								<div class="sub-menu-wrapper" id="business-sub-menu">
 									<div class="triangle"></div>
-									<div class="sub-menu business-sub-menu"><a href="uapay-checkout.html">UAPAY Checkout</a><a href="mass-payouts.html">Масові платежі</a><a href="industry-solutions.html">Галузеві рішення</a></div>
+									<div class="sub-menu business-sub-menu"><a href="uapay-checkout">UAPAY Checkout</a><a href="mass-payouts">Масові платежі</a><a href="industry-solutions">Галузеві рішення</a></div>
 								</div>
 							</div>
 							<div class="menu-item">
@@ -54,7 +54,7 @@
 								<div class="menu-trigger" id="company-trigger">Компанія</div>
 								<div class="sub-menu-wrapper" id="company-sub-menu">
 									<div class="triangle"></div>
-									<div class="sub-menu company-sub-menu"><a href="about-us.html">Про нас</a><a href="news.html">Новини</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Партнерство</a><a href="legal-info.html">Правова інформація</a></div>
+									<div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a><a href="news">Новини</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Партнерство</a><a href="legal-info">Правова інформація</a></div>
 								</div>
 							</div>
 							<div class="menu-item">
@@ -77,8 +77,8 @@
 						<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
 					</div>
 				</div>
-				<div class="post-page-content">
-					<div class="container main-container">
+				<div class="post-page-content animatedParent animateOnce" data-sequence="1000">
+					<div class="container main-container animated fadeIn" data-id="1">
 						<p>
 							Lorem, ipsum dolor sit amet consectetur adipisicing elit<sup>1</sup>. Cum itaque ipsa laboriosam laudantium voluptate necessitatibus culpa iste molestiae fugit veritatis voluptatem temporibus et quibusdam quia sit quam, in sequi accusantium.</p>
 						<h6>Lorem ipsum dolor, sit amet consectetur adipisicing elit</h6>
@@ -142,32 +142,32 @@
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<div class="top-footer-block">
-					<h2>Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn" href="javascript:void(0);"><span>Почати зараз</span>
-						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
-							<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
-						</svg></a>
+				<div class="top-footer-block animatedParent animateOnce" data-sequence="500">
+					<h2 class="animated fadeIn" data-id="1">Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn animated fadeIn" href="javascript:void(0);" data-id="1"><span>Почати зараз</span><i class="animatedParent">
+							<svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
+								<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
+							</svg></i></a>
 				</div>
 				<div class="bottom-footer-block">
-					<div class="row pre-menu-block">
-						<div class="col-xl-3 pre-menu-col"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"></a></div>
-						<div class="col-xl-6 pre-menu-col">
+					<div class="row pre-menu-block animatedParent animateOnce" data-sequence="500">
+						<div class="col-xl-3 pre-menu-col animated fadeIn" data-id="1"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"></a></div>
+						<div class="col-xl-6 pre-menu-col animated fadeIn" data-id="1">
 							<p class="address">04205, Оболонський проспект, 35, Київ, Україна</p>
 						</div>
 					</div>
 					<div class="row footer-menu">
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Бізнесу</p><a class="footer-menu-link" href="uapay-checkout.html">UAPAY Checkout</a><a class="footer-menu-link" href="mass-payouts.html">Масові платежі</a><a class="footer-menu-link" href="industry-solutions.html">Галузеві рішення</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Бізнесу</p><a class="footer-menu-link animated fadeIn" href="uapay-checkout" data-id="2">UAPAY Checkout</a><a class="footer-menu-link animated fadeIn" href="mass-payouts" data-id="3">Масові платежі</a><a class="footer-menu-link animated fadeIn" href="industry-solutions" data-id="4">Галузеві рішення</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Користувачу</p><a class="footer-menu-link" href="javascript:void(0);">Штрафи UAPAY</a><a class="footer-menu-link" href="javascript:void(0);">Оплата послуг</a><a class="footer-menu-link" href="javascript:void(0);">Грошові перекази</a><a class="footer-menu-link" href="javascript:void(0);">Безпечна угода</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Користувачу</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">Штрафи UAPAY</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">Оплата послуг</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">Грошові перекази</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Безпечна угода</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Розробникам</p><a class="footer-menu-link" href="javascript:void(0);">API</a><a class="footer-menu-link" href="javascript:void(0);">Модулі CMS</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Розробникам</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">API</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">Модулі CMS</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Компанія</p><a class="footer-menu-link" href="about-us.html">Про нас</a><a class="footer-menu-link" href="news.html">Новини</a><a class="footer-menu-link" href="javascript:void(0);">FAQ</a><a class="footer-menu-link" href="javascript:void(0);">Партнерство</a><a class="footer-menu-link" href="legal-info.html">Правова інформація</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Компанія</p><a class="footer-menu-link animated fadeIn" href="about-us" data-id="2">Про нас</a><a class="footer-menu-link animated fadeIn" href="news" data-id="3">Новини</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">FAQ</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Партнерство</a><a class="footer-menu-link animated fadeIn" href="legal-info" data-id="6">Правова інформація</a>
 						</div>
 					</div>
 				</div>
@@ -186,6 +186,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="./js/css3-animate-it.js"></script>
 		<script src="./js/common.js"></script>
 	</body>
 </html>

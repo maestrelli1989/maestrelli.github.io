@@ -27,20 +27,20 @@
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/animate.css">
 		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
 		<header class="header red-header">
-			<div class="container">
-				<div class="header-flex">
+			<div class="container animatedParent animateOnce" data-sequence="500">
+				<div class="header-flex animated fadeInDown" data-id="1">
 					<div class="header-flex-left"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"/></a>
 						<div class="menu">
 							<div class="menu-item">
 								<div class="menu-trigger" id="business-trigger">Бізнесу</div>
 								<div class="sub-menu-wrapper" id="business-sub-menu">
 									<div class="triangle"></div>
-									<div class="sub-menu business-sub-menu"><a href="uapay-checkout.html">UAPAY Checkout</a><a href="mass-payouts.html">Масові платежі</a><a href="industry-solutions.html">Галузеві рішення</a></div>
+									<div class="sub-menu business-sub-menu"><a href="uapay-checkout">UAPAY Checkout</a><a href="mass-payouts">Масові платежі</a><a href="industry-solutions">Галузеві рішення</a></div>
 								</div>
 							</div>
 							<div class="menu-item">
@@ -54,7 +54,7 @@
 								<div class="menu-trigger" id="company-trigger">Компанія</div>
 								<div class="sub-menu-wrapper" id="company-sub-menu">
 									<div class="triangle"></div>
-									<div class="sub-menu company-sub-menu"><a href="about-us.html">Про нас</a><a href="news.html">Новини</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Партнерство</a><a href="legal-info.html">Правова інформація</a></div>
+									<div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a><a href="news">Новини</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Партнерство</a><a href="legal-info">Правова інформація</a></div>
 								</div>
 							</div>
 							<div class="menu-item">
@@ -79,71 +79,73 @@
 				</div>
 				<div class="news-page-content">
 					<div class="container main-container">
-						<div class="news-list row"><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+						<div class="news-list row animatedParent animateOnce" data-sequence="200"><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="1"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="2"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="3"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="4"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="5"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="6"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="7"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="8"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="9"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="10"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="11"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.</h6>
-								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12" href="post.html"><span class="news-date">12 грудня 2019</span>
+								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-4 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="12"><span class="news-date">12 грудня 2019</span>
 								<h6 class="news-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!</h6>
 								<p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.</p></a></div>
-						<ul class="pagination" role="navigation">
-							<li class="page-item"><span class="page-link" aria-hidden="true">‹</span></li>
-							<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
-							<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
-							<li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
-							<li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
-							<li class="page-item"><a class="page-link" href="javascript:void(0);">›</a></li>
-						</ul>
+						<div class="animatedParent animateOnce" data-sequence="200">
+							<ul class="pagination animated fadeIn" role="navigation" data-id="1">
+								<li class="page-item"><span class="page-link" aria-hidden="true">‹</span></li>
+								<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">4</a></li>
+								<li class="page-item"><a class="page-link" href="javascript:void(0);">›</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<div class="top-footer-block">
-					<h2>Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn" href="javascript:void(0);"><span>Почати зараз</span>
-						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
-							<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
-						</svg></a>
+				<div class="top-footer-block animatedParent animateOnce" data-sequence="500">
+					<h2 class="animated fadeIn" data-id="1">Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn animated fadeIn" href="javascript:void(0);" data-id="1"><span>Почати зараз</span><i class="animatedParent">
+							<svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
+								<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
+							</svg></i></a>
 				</div>
 				<div class="bottom-footer-block">
-					<div class="row pre-menu-block">
-						<div class="col-xl-3 pre-menu-col"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"></a></div>
-						<div class="col-xl-6 pre-menu-col">
+					<div class="row pre-menu-block animatedParent animateOnce" data-sequence="500">
+						<div class="col-xl-3 pre-menu-col animated fadeIn" data-id="1"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"></a></div>
+						<div class="col-xl-6 pre-menu-col animated fadeIn" data-id="1">
 							<p class="address">04205, Оболонський проспект, 35, Київ, Україна</p>
 						</div>
 					</div>
 					<div class="row footer-menu">
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Бізнесу</p><a class="footer-menu-link" href="uapay-checkout.html">UAPAY Checkout</a><a class="footer-menu-link" href="mass-payouts.html">Масові платежі</a><a class="footer-menu-link" href="industry-solutions.html">Галузеві рішення</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Бізнесу</p><a class="footer-menu-link animated fadeIn" href="uapay-checkout" data-id="2">UAPAY Checkout</a><a class="footer-menu-link animated fadeIn" href="mass-payouts" data-id="3">Масові платежі</a><a class="footer-menu-link animated fadeIn" href="industry-solutions" data-id="4">Галузеві рішення</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Користувачу</p><a class="footer-menu-link" href="javascript:void(0);">Штрафи UAPAY</a><a class="footer-menu-link" href="javascript:void(0);">Оплата послуг</a><a class="footer-menu-link" href="javascript:void(0);">Грошові перекази</a><a class="footer-menu-link" href="javascript:void(0);">Безпечна угода</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Користувачу</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">Штрафи UAPAY</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">Оплата послуг</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">Грошові перекази</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Безпечна угода</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Розробникам</p><a class="footer-menu-link" href="javascript:void(0);">API</a><a class="footer-menu-link" href="javascript:void(0);">Модулі CMS</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Розробникам</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">API</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">Модулі CMS</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Компанія</p><a class="footer-menu-link" href="about-us.html">Про нас</a><a class="footer-menu-link" href="news.html">Новини</a><a class="footer-menu-link" href="javascript:void(0);">FAQ</a><a class="footer-menu-link" href="javascript:void(0);">Партнерство</a><a class="footer-menu-link" href="legal-info.html">Правова інформація</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Компанія</p><a class="footer-menu-link animated fadeIn" href="about-us" data-id="2">Про нас</a><a class="footer-menu-link animated fadeIn" href="news" data-id="3">Новини</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">FAQ</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Партнерство</a><a class="footer-menu-link animated fadeIn" href="legal-info" data-id="6">Правова інформація</a>
 						</div>
 					</div>
 				</div>
@@ -162,6 +164,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="./js/css3-animate-it.js"></script>
 		<script src="./js/common.js"></script>
 	</body>
 </html>

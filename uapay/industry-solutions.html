@@ -27,20 +27,20 @@
 		<meta name="theme-color" content="#ffffff">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./css/animate.css">
 		<link rel="stylesheet" href="./css/main.min.css">
+		<link rel="stylesheet" href="./css/animations.css">
 	</head>
 	<body>
 		<header class="header red-header">
-			<div class="container">
-				<div class="header-flex">
+			<div class="container animatedParent animateOnce" data-sequence="500">
+				<div class="header-flex animated fadeInDown" data-id="1">
 					<div class="header-flex-left"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"/></a>
 						<div class="menu">
 							<div class="menu-item">
 								<div class="menu-trigger" id="business-trigger">Бізнесу</div>
 								<div class="sub-menu-wrapper" id="business-sub-menu">
 									<div class="triangle"></div>
-									<div class="sub-menu business-sub-menu"><a href="uapay-checkout.html">UAPAY Checkout</a><a href="mass-payouts.html">Масові платежі</a><a href="industry-solutions.html">Галузеві рішення</a></div>
+									<div class="sub-menu business-sub-menu"><a href="uapay-checkout">UAPAY Checkout</a><a href="mass-payouts">Масові платежі</a><a href="industry-solutions">Галузеві рішення</a></div>
 								</div>
 							</div>
 							<div class="menu-item">
@@ -54,7 +54,7 @@
 								<div class="menu-trigger" id="company-trigger">Компанія</div>
 								<div class="sub-menu-wrapper" id="company-sub-menu">
 									<div class="triangle"></div>
-									<div class="sub-menu company-sub-menu"><a href="about-us.html">Про нас</a><a href="news.html">Новини</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Партнерство</a><a href="legal-info.html">Правова інформація</a></div>
+									<div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a><a href="news">Новини</a><a href="javascript:void(0);">FAQ</a><a href="javascript:void(0);">Партнерство</a><a href="legal-info">Правова інформація</a></div>
 								</div>
 							</div>
 							<div class="menu-item">
@@ -74,7 +74,7 @@
 			<div class="inner-page-wrapper industry-solutions-page">
 				<div class="intro-block red-intro-block">
 					<div class="container">
-						<h1 class="animated fadeIn delay-1s slower">Отраслевые решения</h1>
+						<h1>Отраслевые решения</h1>
 						<div class="scroll-menu">
 							<ul>
 								<li id="first-trigger">Маркетплейсы</li>
@@ -100,7 +100,7 @@
 								</div>
 								<div class="bottom-half">
 									<div class="flex-left">
-										<svg class="animated fadeInLeft delay-1s slower" width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="marketplace-1" width="350" height="350" rx="10" fill="#FF4544"></rect>
 											<path class="marketplace-2" fill-rule="evenodd" clip-rule="evenodd" d="M261 134H165V130H261C265.418 130 269 133.582 269 138V232C269 236.418 265.418 240 261 240H107C102.582 240 99 236.418 99 232V144H103V232C103 234.209 104.791 236 107 236H261C263.209 236 265 234.209 265 232V138C265 135.791 263.209 134 261 134Z" fill="#FFFFFF"></path>
 											<circle class="marketplace-2" cx="250" cy="128" r="35" fill="#FFFFFF"></circle>
@@ -137,7 +137,7 @@
 								</div>
 								<div class="bottom-half">
 									<div class="flex-left">
-										<svg class="animated fadeInLeft delay-1s slower" width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="online-retail-1" width="350" height="350" rx="10" fill="#FF4544"></rect>
 											<path class="online-retail-2" fill-rule="evenodd" clip-rule="evenodd" d="M67.6657 238.867C65.346 235.553 67.7168 231 71.7619 231H270.238C274.283 231 276.654 235.553 274.334 238.867L270.124 244.882C267.879 248.089 264.209 250 260.293 250H81.7065C77.7907 250 74.1212 248.089 71.8757 244.882L67.6657 238.867ZM71.7619 235C70.9529 235 70.4787 235.911 70.9426 236.573L75.1526 242.588C76.6496 244.726 79.096 246 81.7065 246H260.293C262.904 246 265.35 244.726 266.847 242.588L271.057 236.573C271.521 235.911 271.047 235 270.238 235H71.7619Z" fill="#FFFFFF"></path>
 											<path class="online-retail-2" fill-rule="evenodd" clip-rule="evenodd" d="M236 136H176.5V132H236C240.418 132 244 135.582 244 140V235H98V208H102V231H240V140C240 137.791 238.209 136 236 136Z" fill="#FFFFFF"></path>
@@ -174,7 +174,7 @@
 								</div>
 								<div class="bottom-half">
 									<div class="flex-left">
-										<svg class="animated fadeInLeft delay-1s slower" width="360" height="400" viewBox="0 0 360 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="360" height="400" viewBox="0 0 360 400" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<g opacity="0.2" filter="url(#filter0_f)">
 												<rect class="tourism-1" x="30" y="70" width="300" height="300" rx="10" fill="#FF4544"></rect>
 											</g>
@@ -221,7 +221,7 @@
 								</div>
 								<div class="bottom-half">
 									<div class="flex-left">
-										<svg class="animated fadeInLeft delay-1s slower" width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="taxi-1" width="350" height="350" rx="10" fill="#FF4544"></rect>
 											<path class="taxi-2" fill-rule="evenodd" clip-rule="evenodd" d="M120 242C120 239.791 121.791 238 124 238H141C143.209 238 145 239.791 145 242V253C145 257.418 141.418 261 137 261H128C123.582 261 120 257.418 120 253V242ZM141 242H124V253C124 255.209 125.791 257 128 257H137C139.209 257 141 255.209 141 253V242Z" fill="#FFFFFF"></path>
 											<path class="taxi-2" fill-rule="evenodd" clip-rule="evenodd" d="M205 242C205 239.791 206.791 238 209 238H226C228.209 238 230 239.791 230 242V253C230 257.418 226.418 261 222 261H213C208.582 261 205 257.418 205 253V242ZM226 242H209V253C209 255.209 210.791 257 213 257H222C224.209 257 226 255.209 226 253V242Z" fill="#FFFFFF"></path>
@@ -264,7 +264,7 @@
 								</div>
 								<div class="bottom-half">
 									<div class="flex-left">
-										<svg class="animated fadeInLeft delay-1s slower" width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg width="350" height="350" viewBox="0 0 350 350" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<rect class="money-1" width="350" height="350" rx="10" fill="#FF4544"></rect>
 											<path class="money-2" fill-rule="evenodd" clip-rule="evenodd" d="M86 143C86 137.477 90.4772 133 96 133H230C235.523 133 240 137.477 240 143V237C240 242.523 235.523 247 230 247H96C90.4772 247 86 242.523 86 237V143ZM96 137C92.6863 137 90 139.686 90 143V237C90 240.314 92.6863 243 96 243H230C233.314 243 236 240.314 236 237V143C236 139.686 233.314 137 230 137H96Z" fill="#FFFFFF"></path>
 											<path class="money-2" fill-rule="evenodd" clip-rule="evenodd" d="M104 155C104 151.686 106.686 149 110 149H218C221.314 149 224 151.686 224 155V225C224 228.314 221.314 231 218 231H110C106.686 231 104 228.314 104 225V214H108V225C108 226.105 108.895 227 110 227H218C219.105 227 220 226.105 220 225V155C220 153.895 219.105 153 218 153H110C108.895 153 108 153.895 108 155V166H104V155ZM108 179.5V200H104V179.5H108Z" fill="#FFFFFF"></path>
@@ -295,17 +295,17 @@
 							</div>
 						</div>
 					</div>
-					<div class="second-block">
-						<div class="container">
-							<div class="flex-block">
-								<div class="flex-left"><img src="./images/svg/api-cms.svg" alt="Image"></div>
-								<div class="flex-right">
+					<div class="developers-block">
+						<div class="container main-container">
+							<div class="flex-block animatedParent animateOnce" data-sequence="500">
+								<div class="flex-left animated fadeInLeft" data-id="1"><img src="./images/svg/api-cms.svg" alt="Image"/></div>
+								<div class="flex-right animated fadeInRight" data-id="1">
 									<h4>Разработчикам</h4>
-									<p>Мы предоставляем универсальный платежный API и готовые модули для CMS-систем, которые позволят очень быстро и просто подключить оплату на сайте.</p><a class="action-btn" href="javascript:void(0);"><span>Подробнее</span>
-										<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
-											<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
-										</svg></a>
+									<p>Мы предоставляем универсальный платежный API и готовые модули для CMS-систем, которые позволят очень быстро и просто подключить оплату на сайте.</p><a class="action-btn animated fadeIn" href="javascript:void(0);" data-id="1"><span>Подробнее</span><i class="animatedParent">
+											<svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
+												<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
+											</svg></i></a>
 								</div>
 							</div>
 						</div>
@@ -315,32 +315,32 @@
 		</div>
 		<footer class="footer">
 			<div class="container">
-				<div class="top-footer-block">
-					<h2>Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn" href="javascript:void(0);"><span>Почати зараз</span>
-						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
-							<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
-						</svg></a>
+				<div class="top-footer-block animatedParent animateOnce" data-sequence="500">
+					<h2 class="animated fadeIn" data-id="1">Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn animated fadeIn" href="javascript:void(0);" data-id="1"><span>Почати зараз</span><i class="animatedParent">
+							<svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
+								<path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
+							</svg></i></a>
 				</div>
 				<div class="bottom-footer-block">
-					<div class="row pre-menu-block">
-						<div class="col-xl-3 pre-menu-col"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"></a></div>
-						<div class="col-xl-6 pre-menu-col">
+					<div class="row pre-menu-block animatedParent animateOnce" data-sequence="500">
+						<div class="col-xl-3 pre-menu-col animated fadeIn" data-id="1"><a class="site-logo-link" href="/"><img src="./images/logo/site-logo.png" alt="Logo"></a></div>
+						<div class="col-xl-6 pre-menu-col animated fadeIn" data-id="1">
 							<p class="address">04205, Оболонський проспект, 35, Київ, Україна</p>
 						</div>
 					</div>
 					<div class="row footer-menu">
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Бізнесу</p><a class="footer-menu-link" href="uapay-checkout.html">UAPAY Checkout</a><a class="footer-menu-link" href="mass-payouts.html">Масові платежі</a><a class="footer-menu-link" href="industry-solutions.html">Галузеві рішення</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Бізнесу</p><a class="footer-menu-link animated fadeIn" href="uapay-checkout" data-id="2">UAPAY Checkout</a><a class="footer-menu-link animated fadeIn" href="mass-payouts" data-id="3">Масові платежі</a><a class="footer-menu-link animated fadeIn" href="industry-solutions" data-id="4">Галузеві рішення</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Користувачу</p><a class="footer-menu-link" href="javascript:void(0);">Штрафи UAPAY</a><a class="footer-menu-link" href="javascript:void(0);">Оплата послуг</a><a class="footer-menu-link" href="javascript:void(0);">Грошові перекази</a><a class="footer-menu-link" href="javascript:void(0);">Безпечна угода</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Користувачу</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">Штрафи UAPAY</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">Оплата послуг</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">Грошові перекази</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Безпечна угода</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Розробникам</p><a class="footer-menu-link" href="javascript:void(0);">API</a><a class="footer-menu-link" href="javascript:void(0);">Модулі CMS</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Розробникам</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">API</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">Модулі CMS</a>
 						</div>
-						<div class="col-xl-3 footer-menu-col">
-							<p class="footer-menu-title">Компанія</p><a class="footer-menu-link" href="about-us.html">Про нас</a><a class="footer-menu-link" href="news.html">Новини</a><a class="footer-menu-link" href="javascript:void(0);">FAQ</a><a class="footer-menu-link" href="javascript:void(0);">Партнерство</a><a class="footer-menu-link" href="legal-info.html">Правова інформація</a>
+						<div class="col-xl-3 footer-menu-col animatedParent animateOnce" data-sequence="200">
+							<p class="footer-menu-title animated fadeIn" data-id="1">Компанія</p><a class="footer-menu-link animated fadeIn" href="about-us" data-id="2">Про нас</a><a class="footer-menu-link animated fadeIn" href="news" data-id="3">Новини</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">FAQ</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Партнерство</a><a class="footer-menu-link animated fadeIn" href="legal-info" data-id="6">Правова інформація</a>
 						</div>
 					</div>
 				</div>
@@ -359,6 +359,7 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="./js/css3-animate-it.js"></script>
 		<script src="./js/common.js"></script>
 	</body>
 </html>
